@@ -47,6 +47,13 @@ private:
     void timerCallback() override;
     void selectPreset (int index);
 
+    void drawMoon (juce::Graphics& g, juce::Rectangle<float> area);
+    void drawTombstones (juce::Graphics& g, juce::Rectangle<float> area);
+    void drawBats (juce::Graphics& g, juce::Rectangle<float> area);
+    void drawCobweb (juce::Graphics& g, juce::Point<float> corner);
+    void drawRiiftyMark (juce::Graphics& g, juce::Rectangle<float> area);
+    void drawTitle (juce::Graphics& g, juce::Rectangle<float> area);
+
     GraveyardShiftProcessor& proc;
     GraveLookAndFeel laf;
 
